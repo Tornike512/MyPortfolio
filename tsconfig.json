@@ -11,7 +11,8 @@
     "paths": {
       "src/*": ["src/*"],
       "hooks/*": ["src/hooks/*"],
-      "components/*": ["src/components/*"]
+      "components/*": ["src/components/*"],
+      "assets/*": ["src/assets/*"]
     },
     "skipLibCheck": true,
     "resolveJsonModule": true,

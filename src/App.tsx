@@ -3,7 +3,7 @@ import { PersonInfo } from "./components/header/personInfo";
 
 function App() {
   return (
-    <main>
+    <main className="flex flex-col items-center justify-center">
       <Header />
       <PersonInfo />
     </main>
