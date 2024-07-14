@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Love Days";
+  src: url("./fonts/LoveDays-2v7Oe.ttf");
+}
+
 @layer base {
   img,
   video {
@@ -17,5 +22,6 @@
 }
 
 body {
+  font-family: "Love Days";
   background-color: #11071f;
 }
