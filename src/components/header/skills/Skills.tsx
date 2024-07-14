@@ -16,7 +16,7 @@ export function Skills() {
       <h2 className="text-[24px] text-[#ffffff] font-bold">
         Looking for Front-End Developer Roles
       </h2>
-      <p className="mb-[30px] text-[17px] text-[#ffffff] font-bold">
+      <p className="mb-[80px] text-[17px] text-[#ffffff] font-bold">
         My Skills Include:
       </p>
       <figure className="grid grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] gap-x-[80px]">

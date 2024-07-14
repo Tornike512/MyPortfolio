@@ -1,30 +1,80 @@
+import { Link } from "react-router-dom";
+
 import unilabWebsite from "src/assets/unilab.jpg";
 import amazonCloneWebsite from "src/assets/amazon-clone.jpg";
 import agriosWebsite from "src/assets/agrios.jpg";
 
 export function ProjectsSection() {
   return (
-    <section>
-      <ul>
+    <section className="flex flex-col justify-center items-center px-[40px] text-[#CCD6F6]">
+      <ul className="flex w-full max-w-[1200px] py-[120px]">
         <li>
-          <h2>project name</h2>
-          <p>project description</p>
+          <h2 className="text-[34px] font-bold mb-[30px]">Amazon Clone</h2>
+          <p className="text-[18px] w-[90%] pr-[25px] rounded-[14px]">
+            Worked on a full-stack Amazon clone, focusing on the front-end with
+            React and TypeScript. Collaborated with back-end developers to add
+            user authentication, product listings, and a shopping cart. Used
+            JSON Web Tokens (JWT) and OAuth for secure login and authorization.
+            Tested API endpoints with Postman to ensure smooth interaction
+            between front-end and back-end.
+          </p>
         </li>
-        <img src={amazonCloneWebsite} alt="Project Image" />
+        <a
+          className="w-[170%]"
+          target="_blank"
+          href="https://amazon-clone-rust-psi.vercel.app/"
+        >
+          <img
+            className="w-full object-cover shadow-[0_0_187px_#bf7eff]"
+            src={amazonCloneWebsite}
+            alt="Project Image"
+          />
+        </a>
       </ul>
-      <ul>
+      <ul className="flex w-full max-w-[1200px] py-[120px]">
         <li>
-          <h2>project name</h2>
-          <p>project description</p>
+          <h2 className="text-[34px] font-bold mb-[30px]">Explore Era</h2>
+          <p className="text-[18px] w-[90%] pr-[25px] rounded-[14px]">
+            Built a hotel and flight booking website as part of the Unilab
+            Acceleration Program. Worked on the front-end using Sass and Next.js
+            to create features for registration, authorization, hotel booking,
+            and flight booking. Added filters to improve the search experience
+            for hotels.
+          </p>
         </li>
-        <img src={agriosWebsite} alt="Project Image" />
+        <a
+          className="w-[170%]"
+          target="_blank"
+          href="https://melodic-meringue-713e37.netlify.app/"
+        >
+          <img
+            className="w-full object-cover shadow-[0_0_187px_#bf7eff]"
+            src={unilabWebsite}
+            alt="Project Image"
+          />
+        </a>
       </ul>
-      <ul>
+      <ul className="flex w-full max-w-[1200px] py-[120px]">
         <li>
-          <h2>project name</h2>
-          <p>project description</p>
+          <h2 className="text-[34px] font-bold mb-[30px]">Agrios</h2>
+          <p className="text-[18px] w-[90%] pr-[25px] rounded-[14px]">
+            Created a fully responsive agriculture e-commerce website for buying
+            and selling agricultural products. The project included building a
+            backend system to manage inventory. Developed custom APIs for
+            product requests and used Tailwind CSS for styling.
+          </p>
         </li>
-        <img src={unilabWebsite} alt="Project Image" />
+        <a
+          className="w-[170%]"
+          target="_blank"
+          href="https://66895b274250edc049587159--fanciful-halva-a1bf50.netlify.app/"
+        >
+          <img
+            className="w-full object-cover shadow-[0_0_187px_#bf7eff]"
+            src={agriosWebsite}
+            alt="Project Image"
+          />
+        </a>
       </ul>
     </section>
   );
