@@ -12,23 +12,71 @@ import graphQlLogo from "src/assets/graphql-logo.svg";
 
 export function Skills() {
   return (
-    <section className="max-w-[1200px] w-full py-[120px] px-[40px]">
-      <h2>Looking for Front-End Developer Roles</h2>
-      <p>My Skills Include:</p>
-      <figure>
-        <img src={typescriptLogo} alt="Typescript Logo" />
-        <img src={reactLogo} alt="React Logo" />
-        <img src={sassLogo} alt="Sass Logo" />
-        <img src={antDesignLogo} alt="Ant Design Logo" />
-        <img src={tailwindLogo} alt="Tailwind Logo" />
-        <img src={reduxLogo} alt="Redux Logo" />
+    <section className="flex items-center justify-center flex-col max-w-[1200px] w-full py-[120px] px-[40px]">
+      <h2 className="text-[24px] text-[#ffffff] font-bold">
+        Looking for Front-End Developer Roles
+      </h2>
+      <p className="mb-[30px] text-[17px] text-[#ffffff] font-bold">
+        My Skills Include:
+      </p>
+      <figure className="grid grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] gap-x-[80px]">
+        <img
+          className="w-[120px] cursor-pointer"
+          src={typescriptLogo}
+          alt="Typescript Logo"
+        />
+        <img
+          className="w-[120px] cursor-pointer"
+          src={reactLogo}
+          alt="React Logo"
+        />
+        <img
+          className="w-[120px] cursor-pointer"
+          src={sassLogo}
+          alt="Sass Logo"
+        />
+        <img
+          className="w-[120px] cursor-pointer"
+          src={antDesignLogo}
+          alt="Ant Design Logo"
+        />
+        <img
+          className="w-[120px] cursor-pointer"
+          src={tailwindLogo}
+          alt="Tailwind Logo"
+        />
+        <img
+          className="w-[120px] cursor-pointer"
+          src={reduxLogo}
+          alt="Redux Logo"
+        />
       </figure>
-      <figure>
-        <img src={reactQueryLogo} alt="React Query Logo" />
-        <img src={postmanLogo} alt="Postman Logo" />
-        <img src={figmaLogo} alt="Figma Logo" />
-        <img src={adobePhotoshopLogo} alt="Adobe Photoshop Logo" />
-        <img src={graphQlLogo} alt="GraphQl Logo" />
+      <figure className="flex justify-center items-center mt-[100px]">
+        <img
+          className="w-[120px] cursor-pointer mr-[80px]"
+          src={reactQueryLogo}
+          alt="React Query Logo"
+        />
+        <img
+          className="w-[120px] cursor-pointer mr-[80px]"
+          src={postmanLogo}
+          alt="Postman Logo"
+        />
+        <img
+          className="w-[120px] cursor-pointer mr-[80px]"
+          src={figmaLogo}
+          alt="Figma Logo"
+        />
+        <img
+          className="w-[120px] cursor-pointer mr-[80px]"
+          src={adobePhotoshopLogo}
+          alt="Adobe Photoshop Logo"
+        />
+        <img
+          className="w-[120px] cursor-pointer"
+          src={graphQlLogo}
+          alt="GraphQl Logo"
+        />
       </figure>
     </section>
   );
