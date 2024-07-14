@@ -1,5 +1,6 @@
 import { Header } from "./components/header";
 import { PersonInfo } from "./components/header/personInfo";
+import { ProjectsSection } from "./components/header/projects";
 import { Skills } from "./components/header/skills";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <PersonInfo />/
       <Skills />
+      <ProjectsSection />
     </main>
   );
 }
