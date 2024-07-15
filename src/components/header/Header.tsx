@@ -21,6 +21,9 @@ export function Header() {
           About
         </li>
         <li className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]">
+          Skills
+        </li>
+        <li className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]">
           Projects
         </li>
         <li className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]">
