@@ -1,7 +1,7 @@
 import { Header } from "./components/header";
-import { PersonInfo } from "./components/header/personInfo";
-import { ProjectsSection } from "./components/header/projects";
-import { Skills } from "./components/header/skills";
+import { PersonInfo } from "./components/personInfo";
+import { ProjectsSection } from "./components/projects";
+import { Skills } from "./components/skills";
 import { Contact } from "./components/contact";
 
 function App() {

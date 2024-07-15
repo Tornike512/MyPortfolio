@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import unilabWebsite from "src/assets/unilab.jpg";
 import amazonCloneWebsite from "src/assets/amazon-clone.jpg";
 import agriosWebsite from "src/assets/agrios.jpg";
