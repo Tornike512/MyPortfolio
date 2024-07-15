@@ -58,7 +58,7 @@ export function ProjectsSection() {
           <p className="text-[18px] w-[90%] pr-[25px] rounded-[14px] lg:pr-0">
             Created a fully responsive agriculture e-commerce website for buying
             and selling agricultural products. The project included building a
-            backend system to manage inventory. Developed custom APIs for
+            back-end system to manage inventory. Developed custom APIs for
             product requests and used Tailwind CSS for styling.
           </p>
         </li>
