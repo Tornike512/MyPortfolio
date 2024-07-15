@@ -3,9 +3,9 @@ import whiteGithub from "src/assets/white-github.png";
 
 export function Contact() {
   return (
-    <footer className="px-[40px] py-[120px] text-[#ffffff] w-full max-w-[1200px]">
-      <h2 className="font-bold text-[34px] mb-[70px]">Contact:</h2>
-      <p className="text-[18px] mb-[20px]">
+    <footer className="px-[40px] py-[120px] text-[#ffffff] w-full max-w-[1200px] lg:py-[60px] lg:flex lg:flex-col lg:items-center">
+      <h2 className="font-bold text-[34px] mb-[70px] lg:mb-[30px]">Contact:</h2>
+      <p className="text-[18px] mb-[20px] whitespace-nowrap sm:text-[16px]">
         Email: torniketsagareishvili64@gmail.com
       </p>
       <nav className="flex items-center">
