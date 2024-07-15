@@ -5,10 +5,10 @@ import agriosWebsite from "src/assets/agrios.jpg";
 export function ProjectsSection() {
   return (
     <section className="flex flex-col justify-center items-center px-[40px] text-[#CCD6F6]">
-      <ul className="flex w-full max-w-[1200px] py-[120px]">
-        <li>
+      <ul className="flex w-full max-w-[1200px] py-[120px] items-center lg:flex-col lg:items-center lg:justify-center lg:text-center lg:mb-5 lg:pb-0 lg:pt-[60px]">
+        <li className="lg:flex lg:flex-col lg:items-center lg:justify-center lg:text-center">
           <h2 className="text-[34px] font-bold mb-[30px]">Amazon Clone</h2>
-          <p className="text-[18px] w-[90%] pr-[25px] rounded-[14px]">
+          <p className="text-[18px] w-[90%] pr-[25px] rounded-[14px] lg:pr-0">
             Worked on a full-stack Amazon clone, focusing on the front-end with
             React and TypeScript. Collaborated with back-end developers to add
             user authentication, product listings, and a shopping cart. Used
@@ -18,7 +18,7 @@ export function ProjectsSection() {
           </p>
         </li>
         <a
-          className="w-[170%]"
+          className="w-[170%] lg:w-full lg:mt-[30px]"
           target="_blank"
           href="https://amazon-clone-rust-psi.vercel.app/"
         >
@@ -29,10 +29,10 @@ export function ProjectsSection() {
           />
         </a>
       </ul>
-      <ul className="flex w-full max-w-[1200px] py-[120px]">
-        <li>
+      <ul className="flex w-full max-w-[1200px] items-center py-[120px] lg:flex-col lg:items-center lg:justify-center lg:text-center lg:mb-5 lg:pb-0 lg:pt-[60px]">
+        <li className="lg:flex lg:flex-col lg:items-center lg:justify-center lg:text-center">
           <h2 className="text-[34px] font-bold mb-[30px]">Explore Era</h2>
-          <p className="text-[18px] w-[90%] pr-[25px] rounded-[14px]">
+          <p className="text-[18px] w-[90%] pr-[25px] rounded-[14px] lg:pr-0">
             Built a hotel and flight booking website as part of the Unilab
             Acceleration Program. Worked on the front-end using Sass and Next.js
             to create features for registration, authorization, hotel booking,
@@ -41,7 +41,7 @@ export function ProjectsSection() {
           </p>
         </li>
         <a
-          className="w-[170%]"
+          className="w-[170%] lg:w-full lg:mt-[30px]"
           target="_blank"
           href="https://melodic-meringue-713e37.netlify.app/"
         >
@@ -52,10 +52,10 @@ export function ProjectsSection() {
           />
         </a>
       </ul>
-      <ul className="flex w-full max-w-[1200px] py-[120px]">
-        <li>
+      <ul className="flex w-full max-w-[1200px] items-center py-[120px] lg:flex-col lg:items-center lg:justify-center lg:text-center lg:mb-5 lg:pb-0 lg:pt-[60px]">
+        <li className="lg:flex lg:flex-col lg:items-center lg:justify-center lg:text-center">
           <h2 className="text-[34px] font-bold mb-[30px]">Agrios</h2>
-          <p className="text-[18px] w-[90%] pr-[25px] rounded-[14px]">
+          <p className="text-[18px] w-[90%] pr-[25px] rounded-[14px] lg:pr-0">
             Created a fully responsive agriculture e-commerce website for buying
             and selling agricultural products. The project included building a
             backend system to manage inventory. Developed custom APIs for
@@ -63,7 +63,7 @@ export function ProjectsSection() {
           </p>
         </li>
         <a
-          className="w-[170%]"
+          className="w-[170%] lg:w-full lg:mt-[30px]"
           target="_blank"
           href="https://66895b274250edc049587159--fanciful-halva-a1bf50.netlify.app/"
         >
