@@ -1,11 +1,27 @@
-import { useDispatch, useSelector } from "react-redux";
-import { targetRef } from "src/redux/targetRef";
+import { useSelector } from "react-redux";
 
 export function Header() {
-  const dispatch = useDispatch();
   const targetRef = useSelector((state: any) => state.targetRef);
 
   const handleAboutClick = () => {
+    if (targetRef) {
+      targetRef.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleSkillsClick = () => {
+    if (targetRef) {
+      targetRef.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleProjectsClick = () => {
+    if (targetRef) {
+      targetRef.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleContactClick = () => {
     if (targetRef) {
       targetRef.scrollIntoView({ behavior: "smooth" });
     }
@@ -20,13 +36,22 @@ export function Header() {
         >
           About
         </li>
-        <li className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]">
+        <li
+          onClick={handleSkillsClick}
+          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]"
+        >
           Skills
         </li>
-        <li className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]">
+        <li
+          onClick={handleProjectsClick}
+          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]"
+        >
           Projects
         </li>
-        <li className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]">
+        <li
+          onClick={handleContactClick}
+          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]"
+        >
           Contact
         </li>
       </ul>

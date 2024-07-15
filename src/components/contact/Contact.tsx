@@ -1,9 +1,25 @@
+import { useEffect, useRef } from "react";
+import { useDispatch } from "react-redux";
+import { setTargetRef } from "src/redux/targetRef";
+
 import whiteLinkedin from "src/assets/white-linkedin.png";
 import whiteGithub from "src/assets/white-github.png";
 
 export function Contact() {
+  const targetRef = useRef(null);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (targetRef) {
+      dispatch(setTargetRef(targetRef.current));
+    }
+  }, [dispatch]);
+
   return (
-    <footer className="px-[40px] py-[120px] text-[#ffffff] w-full max-w-[1200px] lg:py-[60px] lg:flex lg:flex-col lg:items-center">
+    <footer
+      ref={targetRef}
+      className="px-[40px] py-[120px] text-[#ffffff] w-full max-w-[1200px] lg:py-[60px] lg:flex lg:flex-col lg:items-center"
+    >
       <h2 className="font-bold text-[34px] mb-[70px] lg:mb-[30px]">Contact:</h2>
       <p className="text-[18px] mb-[20px] whitespace-nowrap sm:text-[16px]">
         Email: torniketsagareishvili64@gmail.com
