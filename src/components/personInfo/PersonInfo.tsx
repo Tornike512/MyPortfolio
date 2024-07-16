@@ -1,20 +1,22 @@
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { setTargetRef } from "src/redux/targetRef";
+import { setTargetAbout } from "src/redux/refs";
 
 import personImage from "assets/person-image.jpg";
 
 export function PersonInfo() {
-  const targetRef = useRef(null);
+  const targetAbout = useRef(null);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(setTargetRef(targetRef.current));
+    if (targetAbout) {
+      dispatch(setTargetAbout(targetAbout.current));
+    }
   }, [dispatch]);
 
   return (
     <section
-      ref={targetRef}
+      ref={targetAbout}
       className="flex flex-col items-center justify-center max-w-[1200px] w-full relative py-[120px] px-[40px] text-[#ffffff] md:pb-0"
     >
       <figure className="flex items-center justify-center w-full lg:flex-col">

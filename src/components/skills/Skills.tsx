@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { setTargetRef } from "src/redux/targetRef";
+import { setTargetSkills } from "src/redux/refs";
 
 import typescriptLogo from "src/assets/typescript-logo.svg";
 import reactLogo from "src/assets/react-logo.png";
@@ -15,18 +15,18 @@ import adobePhotoshopLogo from "src/assets/photoshop-logo.svg";
 import graphQlLogo from "src/assets/graphql-logo.svg";
 
 export function Skills() {
-  const targetRef = useRef(null);
+  const targetSkills = useRef(null);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (targetRef) {
-      dispatch(setTargetRef(targetRef.current));
+    if (targetSkills) {
+      dispatch(setTargetSkills(targetSkills.current));
     }
   }, [dispatch]);
 
   return (
     <section
-      ref={targetRef}
+      ref={targetSkills}
       className="flex items-center justify-center flex-col max-w-[1200px] w-full py-[120px] px-[40px] md:pb-0"
     >
       <h2 className="text-[24px] text-[#ffffff] font-bold whitespace-nowrap sm:text-[18px]">

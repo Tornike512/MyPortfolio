@@ -1,13 +1,27 @@
-import { targetRef } from "./targetRef";
+import {
+  targetAbout,
+  targetSkills,
+  targetContact,
+  targetProjects,
+} from "./refs";
 
 const initialState = {
-  targetRef: null,
+  targetAbout: null,
+  targetSkills: null,
+  targetContact: null,
+  targetProjects: null,
 };
 
 const refSlice = (state = initialState, action: any) => {
   switch (action.type) {
-    case targetRef:
-      return { ...state, targetRef: action.payload };
+    case targetAbout:
+      return { ...state, targetAbout: action.payload };
+    case targetSkills:
+      return { ...state, targetSkills: action.payload };
+    case targetProjects:
+      return { ...state, targetProjects: action.payload };
+    case targetContact:
+      return { ...state, targetContact: action.payload };
     default:
       return state;
   }

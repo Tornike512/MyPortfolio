@@ -1,24 +1,24 @@
 import { useDispatch } from "react-redux";
 import { useRef, useEffect } from "react";
-import { setTargetRef } from "src/redux/targetRef";
+import { setTargetProjects } from "src/redux/refs";
 
 import unilabWebsite from "src/assets/unilab.jpg";
 import amazonCloneWebsite from "src/assets/amazon-clone.jpg";
 import agriosWebsite from "src/assets/agrios.jpg";
 
 export function ProjectsSection() {
-  const targetRef = useRef(null);
+  const targetProjects = useRef(null);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (targetRef) {
-      dispatch(setTargetRef(targetRef.current));
+    if (targetProjects) {
+      dispatch(setTargetProjects(targetProjects.current));
     }
   }, [dispatch]);
 
   return (
     <section
-      ref={targetRef}
+      ref={targetProjects}
       className="flex flex-col justify-center items-center px-[40px] text-[#CCD6F6]"
     >
       <ul className="flex w-full max-w-[1200px] py-[120px] items-center lg:flex-col lg:items-center lg:justify-center lg:text-center lg:mb-5 lg:pb-0 lg:pt-[60px]">

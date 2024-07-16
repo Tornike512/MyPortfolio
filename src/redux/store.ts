@@ -1,6 +1,10 @@
-import { createStore } from "@reduxjs/toolkit";
+import { createStore, combineReducers } from "redux";
 import refSlice from "./ref";
 
-const store = createStore(refSlice);
+const rootReducer = combineReducers({
+  refs: refSlice,
+});
+
+const store = createStore(rootReducer);
 
 export default store;

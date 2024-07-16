@@ -1,29 +1,32 @@
 import { useSelector } from "react-redux";
 
 export function Header() {
-  const targetRef = useSelector((state: any) => state.targetRef);
+  const targetAbout = useSelector((state: any) => state.refs.targetAbout);
+  const targetSkills = useSelector((state: any) => state.refs.targetSkills);
+  const targetProjects = useSelector((state: any) => state.refs.targetProjects);
+  const targetContact = useSelector((state: any) => state.refs.targetContact);
 
   const handleAboutClick = () => {
-    if (targetRef) {
-      targetRef.scrollIntoView({ behavior: "smooth" });
+    if (targetAbout) {
+      targetAbout.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const handleSkillsClick = () => {
-    if (targetRef) {
-      targetRef.scrollIntoView({ behavior: "smooth" });
+    if (targetSkills) {
+      targetSkills.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const handleProjectsClick = () => {
-    if (targetRef) {
-      targetRef.scrollIntoView({ behavior: "smooth" });
+    if (targetProjects) {
+      targetProjects.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const handleContactClick = () => {
-    if (targetRef) {
-      targetRef.scrollIntoView({ behavior: "smooth" });
+    if (targetContact) {
+      targetContact.scrollIntoView({ behavior: "smooth" });
     }
   };
 
