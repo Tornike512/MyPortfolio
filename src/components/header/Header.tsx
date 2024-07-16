@@ -35,25 +35,25 @@ export function Header() {
       <ul className="flex items-center justify-between px-[40px] w-full max-w-[1200px] text-[#ffffff]">
         <li
           onClick={handleAboutClick}
-          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]"
+          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA] sm:text-[17px]"
         >
           About
         </li>
         <li
           onClick={handleSkillsClick}
-          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]"
+          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA] sm:text-[17px]"
         >
           Skills
         </li>
         <li
           onClick={handleProjectsClick}
-          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]"
+          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA] sm:text-[17px]"
         >
           Projects
         </li>
         <li
           onClick={handleContactClick}
-          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA]"
+          className="text-[20px] font-bold cursor-pointer hover:text-[#7127BA] sm:text-[17px]"
         >
           Contact
         </li>
