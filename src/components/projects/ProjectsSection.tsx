@@ -81,7 +81,7 @@ export function ProjectsSection() {
         <a
           className="w-[170%] lg:w-full lg:mt-[30px]"
           target="_blank"
-          href="https://66895b274250edc049587159--fanciful-halva-a1bf50.netlify.app/"
+          href="https://669ba1e4f8996d5036c64e57--glittering-rugelach-aaada7.netlify.app/"
         >
           <img
             className="w-full object-cover shadow-[0_0_187px_#bf7eff]"
